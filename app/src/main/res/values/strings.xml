@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task08GrupalLoginRegistro</string>
+    <string name="nombre_usuario">Nombre Usuario:</string>
+    <string name="contra">Contraseña:</string>
 </resources>

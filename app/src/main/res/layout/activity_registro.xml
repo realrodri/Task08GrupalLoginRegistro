@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/sexo"
-        android:layout_width="116dp"
-        android:layout_height="21dp"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
         android:gravity="right"
         android:text="Sexo:"
-        app:layout_constraintBottom_toTopOf="@+id/nacionalidad"
-        app:layout_constraintEnd_toStartOf="@+id/checkBoxH"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <CheckBox
         android:id="@+id/checkBoxFutbol"
@@ -27,27 +27,15 @@
         app:layout_constraintStart_toEndOf="@+id/checkBoxTenis"
         tools:layout_editor_absoluteY="205dp" />
 
-    <CheckBox
-        android:id="@+id/checkBoxM"
-        android:layout_width="71dp"
-        android:layout_height="33dp"
-        android:text="M"
-        android:textSize="8sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxH"
-        tools:layout_editor_absoluteY="117dp" />
-
     <EditText
         android:id="@+id/editTextTextContraseña"
-        android:layout_width="139dp"
+        android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <TextView
@@ -55,39 +43,36 @@
         android:layout_width="115dp"
         android:layout_height="24dp"
         android:gravity="right"
-        android:text="Nombre Usuario:"
+        android:text="@string/nombre_usuario"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@id/editTextNombre"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="115dp"
         android:layout_height="22dp"
         android:gravity="right"
-        android:text="Contraseña:"
+        android:text="@string/contra"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextContraseña"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
     <EditText
         android:id="@+id/editTextNombre"
-        android:layout_width="139dp"
+        android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextContraseña"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nombre"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
         android:id="@+id/aficiones"
@@ -119,16 +104,7 @@
         android:gravity="right"
         android:text="Nacionalidad:"
         app:layout_constraintBottom_toTopOf="@+id/aficiones"
-        app:layout_constraintEnd_toStartOf="@+id/spinnerSexo" />
-
-    <CheckBox
-        android:id="@+id/checkBoxH"
-        android:layout_width="68dp"
-        android:layout_height="33dp"
-        android:text="H"
-        android:textSize="8sp"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintEnd_toStartOf="@+id/spinnerNacio" />
 
     <CheckBox
         android:id="@+id/checkBoxTenis"
@@ -139,15 +115,8 @@
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="205dp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="407dp" />
-
     <Spinner
-        android:id="@+id/spinnerSexo"
+        android:id="@+id/spinnerNacio"
         android:layout_width="139dp"
         android:layout_height="20dp"
 
@@ -181,5 +150,26 @@
         android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="69dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="187dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="67dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
