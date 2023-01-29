@@ -17,6 +17,7 @@ class Registro : AppCompatActivity() {
 
         validarUsuario()
         botonVolver()
+        botonesSexo()
 
     }
 
@@ -57,5 +58,14 @@ class Registro : AppCompatActivity() {
                 "Aceptar", Toast.LENGTH_SHORT).show()
         }
         builder.show()
+    }
+
+    fun botonesSexo(){
+        binding.radioH.setOnClickListener {
+            binding.radioM.isChecked=false
+        }
+        binding.radioM.setOnClickListener {
+            binding.radioH.isChecked=false
+        }
     }
 }
