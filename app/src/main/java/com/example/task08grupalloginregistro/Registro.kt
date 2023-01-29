@@ -12,7 +12,7 @@ class Registro : AppCompatActivity() {
     lateinit var binding: ActivityRegistroBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityRegistroBinding.inflate(layoutInflater)
+        binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         validarUsuario()
@@ -23,18 +23,18 @@ class Registro : AppCompatActivity() {
 
     fun validarUsuario(){
         binding.registrar.setOnClickListener {
-            if (binding.editTextNombre.text.isEmpty() || binding.editTextTextContraseA.text.isEmpty()){
+            if (binding.editTextNombre.text.isEmpty() || binding.editTextTextContraseA.text.isEmpty())
                 alertaRegistro()
-            }else if (!binding.radioH.isChecked && !binding.radioM.isChecked){
+            else if (!binding.radioH.isChecked && !binding.radioM.isChecked)
                 alertaRegistro()
-            }else if (binding.spinnerNacio.isEmpty()){
+            else if (binding.spinnerNacio.isEmpty())
                 alertaRegistro()
-            }else if (!binding.checkBoxFutbol.isChecked && !binding.checkBoxTenis.isChecked){
+            else if (!binding.checkBoxFutbol.isChecked && !binding.checkBoxTenis.isChecked)
                 alertaRegistro()
-            }else if (binding.MultiLine.text.isEmpty()){
+            else if (binding.MultiLine.text.isEmpty())
                 alertaRegistro()
-            }else{
-                val intent= Intent(this, Login::class.java)
+            else{
+                val intent = Intent(this, Login::class.java)
                 intent.putExtra("USER", binding.editTextNombre.text.toString())
                 intent.putExtra("PASS", binding.editTextTextContraseA.text.toString())
                 startActivity(intent)
@@ -44,7 +44,7 @@ class Registro : AppCompatActivity() {
 
     fun botonVolver(){
         binding.cancelar.setOnClickListener {
-            val intent= Intent(this, Login::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }
@@ -62,10 +62,10 @@ class Registro : AppCompatActivity() {
 
     fun botonesSexo(){
         binding.radioH.setOnClickListener {
-            binding.radioM.isChecked=false
+            binding.radioM.isChecked = false
         }
         binding.radioM.setOnClickListener {
-            binding.radioH.isChecked=false
+            binding.radioH.isChecked = false
         }
     }
 }

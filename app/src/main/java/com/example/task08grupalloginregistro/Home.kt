@@ -7,7 +7,7 @@ import com.example.task08grupalloginregistro.databinding.ActivityHomeBinding
 class Home : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding= ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
