@@ -45,7 +45,7 @@ A continuación de las pautas provistas, se acompaña de unos ejemplos visuales 
 
 ## Interfaz visual del logueo
 
-![imagen1.png](imagen1.png)
+![imagen1.png](images_for_doc/imagen1.png)
 
 El código de la interfaz de logueo es el siguiente:
 
@@ -258,7 +258,7 @@ class Login : AppCompatActivity() {
 
 ## Interfaz visual del registro
 
-![imagen2.png](imagen2.png)
+![imagen2.png](images_for_doc/imagen2.png)
 
 El código de la interfaz de registro es el siguiente:
 
@@ -574,7 +574,7 @@ class Registro : AppCompatActivity() {
 
 ## Interfaz visual de la pantalla ```home```
 
-![imagen3.png](imagen3.png)
+![imagen3.png](images_for_doc/imagen3.png)
 
 El código de la interfaz de registro es el siguiente:
 
