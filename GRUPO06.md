@@ -4,10 +4,10 @@
 
 GRUPO 06
 
-- Javier Alcantarilla Ballesteros (backend del Login, Registro y Home)
-- Daniel Izquierdo Bonilla (interfaz de Registro)
-- Alejandro Elías Vicente (interfaz de Login)
-- Rodrigo Sánchez Gómez (documentación)
+- Javier Alcantarilla Ballesteros (Developer 01)
+- Daniel Izquierdo Bonilla (Developer 02)
+- Alejandro Elías Vicente (QA Tester)
+- Rodrigo Sánchez Gómez (Documentalista)
 
 ## Introducción
 
