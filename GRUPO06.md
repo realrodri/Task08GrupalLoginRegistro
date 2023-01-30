@@ -632,6 +632,8 @@ class Home : AppCompatActivity() {
 
 Link del GitHub: https://github.com/rodrienlared/Task08GrupalLoginRegistro
 
+Link del Gif: https://github.com/rodrienlared/Task08GrupalLoginRegistro/blob/main/grabacion_gif.gif
+
 Bibliografía: Conocimiento propio y documentación oficial de Android (https://developer.android.com/).
 
 ¡Fin de la práctica!
